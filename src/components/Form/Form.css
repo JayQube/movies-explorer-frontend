@@ -1,0 +1,256 @@
+.form {
+  min-height: calc(100vh - 108px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #fff;
+}
+
+.form_profile {
+  min-height: calc(100vh - 148px);
+}
+
+.form__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 40px 0 40px;
+}
+
+.form__title_profile {
+  margin: 0 0 123px;
+}
+
+.form__input-container {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 64px 64px 256px;
+  gap: 6px;
+}
+
+.form__input-container_profile {
+  grid-template-rows: 31px 31px 240px;
+}
+
+.form__input-container_register {
+  grid-template-rows: 64px 64px 64px 186px;
+}
+
+.form__field {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  box-sizing: border-box;
+  gap: 6px;
+}
+
+.form__field_profile {
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(2, 14px);
+  gap: 3px;
+}
+
+.form__field_profile:not(:last-of-type) {
+  border-bottom: 1px solid #424242;
+}
+
+.form__input-title {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0;
+  color: #8B8B8B;
+  text-align: left;
+}
+
+.form__input-title_profile {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.form__input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  color: #fff;
+  border-bottom: 1px solid #424242;
+  height: 28px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: inherit;
+}
+
+.form__input:focus {
+  border-bottom: 1px solid #4285F4;
+}
+
+.form__input_profile {
+  font-size: 11px;
+  line-height: 13px;
+  text-align: right;
+  border-bottom: none;
+  height: 13px;
+}
+
+.form__input_profile:focus {
+  border: none;
+}
+
+.form__error {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: left;
+  color: #EE3465;
+  height: 12px;
+}
+
+.form__confirm-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #4285F4;
+  border-radius: 3px;
+  width: 100%;
+  height: 45px;
+  border: 0;
+  margin: 0 auto 16px;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+  color: #fff;
+  align-self: end;
+}
+
+.form__confirm-btn_profile {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  width: fit-content;
+  background-color: inherit;
+  height: auto;
+}
+
+.form__confirm-btn_register {
+  margin-top: 134px;
+}
+
+.form__confirm-btn:hover {
+  opacity: .7;
+}
+
+.form__logout-button {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #EE3465;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: fit-content;
+  transition: opacity .2s ease-in-out;
+}
+
+.form__logout-button:hover {
+  opacity: .7;
+}
+
+.form__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8B8B8B;
+  margin: 0;
+}
+
+.form__subtitle-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4285F4;
+  margin-left: 6px;
+  -webkit-text-stroke: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .form {
+    min-height: calc(100vh - 270px);
+  }
+
+  .form_profile {
+    min-height: calc(100vh - 310px);
+  }
+
+
+  .form__title_profile {
+    margin-bottom: 96px;
+  }
+
+  .form__input-container {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 64px 64px 256px;
+    gap: 6px;
+  }
+
+  .form__input-container_profile {
+    grid-template-rows: 31px 31px 230px;
+  }
+
+  .form__input-container_register {
+    grid-template-rows: 64px 64px 64px 186px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    min-height: calc(100vh - 94px);
+  }
+
+  .form_profile {
+    min-height: calc(100vh - 144px);
+  }
+
+  .form__title {
+    margin: 50px 0 80px;
+  }
+
+  .form__title_profile {
+    margin: 0 0 80px;
+  }
+
+  .form__input-container {
+    grid-template-rows: 64px 64px 342px;
+  }
+
+  .form__input-container_profile {
+    grid-template-rows: 31px 31px 398px;
+  }
+
+  .form__input-container_register {
+    grid-template-rows: 64px 64px 64px 272px;
+  }
+
+  .form__confirm-btn_profile {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .form__logout-button {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

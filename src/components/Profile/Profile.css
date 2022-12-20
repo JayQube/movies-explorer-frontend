@@ -1,0 +1,19 @@
+.profile {
+  padding: 74px 0 70px;
+  max-width: 410px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  .profile {
+    padding: 236px 0 269px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profile {
+    padding: 70px 0 40px;
+    max-width: 81.25%;
+  }
+}

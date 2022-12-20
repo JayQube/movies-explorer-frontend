@@ -1,0 +1,125 @@
+.about-project {
+  padding: 110px 70px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #fff;
+}
+
+.about-project__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  list-style: none;
+  margin: 70px 0 0;
+  padding: 0;
+}
+
+.about-project__card {
+  max-width: 550px;
+}
+
+.about-project__card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.about-project__card-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 26px 0 0;
+}
+
+.about-project__terms {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 36px 31px;
+  margin-top: 110px;
+  text-align: center;
+}
+
+.about-project__term {
+  margin: 0;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.about-project__kind {
+  margin: 0;
+  font-size: 14px;
+  line-height: 31px;
+  font-weight: 500;
+  color: #8B8B8B;
+}
+
+.about-project__term_green {
+  background-color: #3DDC84;
+  color: #000;
+}
+
+.about-project__term_grey {
+  background-color: #303030;
+}
+
+@media screen and (max-width: 900px) {
+  .about-project {
+    padding: 90px 50px;
+  }
+
+  .about-project__card-text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 22px;
+  }
+
+  .about-project__terms {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 36px 31px;
+    margin-top: 93px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-project {
+    padding: 70px 18px;
+  }
+
+  .about-project__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+    list-style: none;
+    margin-top: 60px;
+  }
+
+  .about-project__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-project__card-text {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 16px;
+  }
+
+  .about-project__terms {
+    grid-template-columns: 100px auto;
+    grid-template-rows: 35px 23px;
+    margin-top: 60px;
+  }
+
+  .about-project__term {
+    font-size: 11px;
+    line-height: 35px;
+  }
+  
+  .about-project__kind {
+    font-size: 11px;
+    line-height: 23px;
+  }
+}

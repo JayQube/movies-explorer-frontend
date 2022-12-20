@@ -1,0 +1,53 @@
+.menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .4s, visibility .4s ease-in-out;
+  position: absolute;
+}
+
+.menu::before {
+  display: block;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.menu__close-btn {
+  background-image: url(../../images/menu_close_button.svg);
+  width: 22px;
+  height: 22px;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  transition: opacity .2s ease-in-out;
+}
+
+.menu__close-btn:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 900px) {
+  .menu_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu__close-btn {
+    top: 18px;
+    right: 18px;
+  }
+}

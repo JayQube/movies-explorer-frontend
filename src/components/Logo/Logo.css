@@ -1,0 +1,17 @@
+.logo {
+  display: block;
+  background-image: url(../../images/logo.svg);
+  width: 38px;
+  height: 38px;
+  transition: opacity .2s ease-in-out;
+}
+
+.logo:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    align-self: center;
+  }
+}

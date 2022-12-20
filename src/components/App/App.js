@@ -18,7 +18,7 @@ function App() {
   const location = useLocation().pathname;
   const history = useHistory();
 
-  const loggedIn = false;
+  const loggedIn = true;
   const isMovieFound = false;
   const activatePreloder = false;
 

@@ -1,5 +1,5 @@
 .login {
-  padding: 70px 0 0;
+  padding: 70px 0 70px;
   max-width: 396px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -9,13 +9,13 @@
 
 @media screen and (max-width: 900px) {
   .login {
-    padding-top: 232px;
+    padding: 232px 0 232px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .login {
-    padding-top: 56px;
+    padding: 56px 0 30px;
     max-width: 81.25%;
   }
 }

@@ -54,9 +54,14 @@
   height: 34px;
   position: absolute;
   right: 0;
-  bottom: 15px;
+  top: 0;
   z-index: 1;
   cursor: pointer;
+  transition: opacity .2s ease-in-out;
+}
+
+.search-form__confirm-btn:hover {
+  opacity: .7;
 }
 
 .search-form__checkbox {
@@ -93,16 +98,17 @@
   .search-form__input-container {
     padding: 0 80px 0 0;
     background-image: none;
-    height: 38px;
+    height: 44px;
   }
 
   .search-form__input {
     text-align: left;
     font-size: 18px;
     line-height: 22px;
+    margin-top: 6px;
   }
 
   .search-form__confirm-btn {
-    bottom: 9px;
+    bottom: -9px;
   }
 }

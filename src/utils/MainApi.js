@@ -74,7 +74,7 @@ class MainApi {
 }
 
 const mainApi = new MainApi({
-  baseUrl: 'http://api.shebyakin.movies.nomoredomains.club',
+  baseUrl: 'https://api.shebyakin.movies.nomoredomains.club',
   headers: {
     'Content-Type': 'application/json',
   }

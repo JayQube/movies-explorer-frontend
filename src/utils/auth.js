@@ -1,11 +1,11 @@
-export const BASE_URL = 'http://api.shebyakin.movies.nomoredomains.club';
+export const BASE_URL = 'https://api.shebyakin.movies.nomoredomains.club';
 
 const checkRequest = (res) => {
   if (res.ok) {
     return res.json();
   } else {
     return Promise.reject(`Ошибка: ${res.status}`);
-  } 
+  }  
 }
 
 export const register = (data) => {

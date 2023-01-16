@@ -1,0 +1,21 @@
+.register {
+  padding: 70px 0 70px;
+  max-width: 396px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+  .register {
+    padding: 232px 0 232px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .register {
+    padding: 56px 0 30px;
+    max-width: 81.25%;
+  }
+}

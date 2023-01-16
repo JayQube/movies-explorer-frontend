@@ -1,0 +1,114 @@
+.search-form {
+  padding: 70px 70px 48px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #fff;
+}
+
+.search-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.search-form__input-container {
+  display: flex;
+  margin: 0;
+  padding: 0 80px;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #424242;
+  align-items: baseline;
+  position: relative;
+  background-image: url(../../images/search_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 34px 34px;
+}
+
+.search-form__input {
+  width: 100%;
+  background-color: inherit;
+  padding: 0;
+  border: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #fff;
+}
+
+.search-form__input::placeholder {
+  margin-left: 30px;
+  color: #8B8B8B;
+}
+
+.search-form__confirm-btn {
+  background-image: url(../../images/search_btn.svg);
+  background-repeat: no-repeat;
+  background-color: inherit;
+  background-position: right;
+  border: 0;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+}
+
+.search-form__confirm-btn:hover {
+  opacity: .7;
+}
+
+.search-form__checkbox {
+  border: none;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.search-form__checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .search-form {
+    padding: 86px 30px 61px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-form {
+    padding: 98px 14px 50px;
+  }
+
+  .search-form__form {
+    gap: 42px;
+  }
+
+  .search-form__input-container {
+    padding: 0 80px 0 0;
+    background-image: none;
+    height: 44px;
+  }
+
+  .search-form__input {
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 6px;
+  }
+
+  .search-form__confirm-btn {
+    bottom: -9px;
+  }
+}

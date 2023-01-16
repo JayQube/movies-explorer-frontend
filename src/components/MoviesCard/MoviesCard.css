@@ -1,0 +1,84 @@
+.movie {
+  background-color: #222222;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: #fff;
+}
+
+.movie__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 14px;
+}
+
+.movie__title {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 44px);
+}
+
+.movie__duration {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #8B8B8B;
+  margin: 9px 0 0;
+}
+
+.movie__image {
+  display: block;
+  width: 100%;
+  height: 203px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.movie__btn {
+  background-repeat: no-repeat;
+  background-color: inherit;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 14px;
+  bottom: 19px;
+  transition: opacity .2s ease-in-out;
+}
+
+.movie__btn_type_save {
+  background-image: url(../../images/moviecard_save-btn.svg);
+}
+
+.movie__btn_type_save-active {
+  background-image: url(../../images/moviecard_save-btn_active.svg);
+}
+
+.movie__btn_type_delete {
+  background-image: url(../../images/moviecard_delete-btn.svg);
+}
+
+.movie__btn:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 900px) {
+  .movie__image {
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .movie__image {
+    height: 168px;
+  }
+}

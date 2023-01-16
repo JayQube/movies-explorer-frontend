@@ -1,10 +1,14 @@
 import './SearchForm.css';
 import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
 
-function SearchForm() {
+function SearchForm({ inputValue, onSubmit, onInputChange, onCheckboxChange, isCheckboxChecked, inputError }) {
   return (
     <section className='search-form'>
-      <form className='search-form__form' name='search'>
+      <form
+        className='search-form__form'
+        name='search'
+        onSubmit={onSubmit}
+      >
         <fieldset className='search-form__input-container'>
           <input
             type='search'
@@ -12,14 +16,21 @@ function SearchForm() {
             name='search'
             placeholder='Фильм'
             className='search-form__input'
-            required
+            minLength='1'
+            value={inputValue || ''}
+            onChange={onInputChange}
           />
           <button
             type='submit'
-            className='search-form__confirm-btn' />
+            className='search-form__confirm-btn'
+          />
         </fieldset>
+        <span className='search-form__error'>{inputError && 'Нужно ввести ключевое слово'}</span>
         <fieldset className='search-form__checkbox'>
-          <FilterCheckbox />
+          <FilterCheckbox
+            onCheckboxChange={onCheckboxChange}
+            isCheckboxChecked={isCheckboxChecked}
+          />
           <p className='search-form__checkbox-text'>Короткометражки</p>
         </fieldset>
       </form>

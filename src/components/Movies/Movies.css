@@ -9,7 +9,7 @@
   min-height: calc(100vh - 245px);
 }
 
-.movies__error {
+.movies__notification {
   text-align: center;
   font-weight: 500;
   font-size: 28px;
@@ -19,8 +19,12 @@
   padding: 0 70px;
 }
 
+.movies__notification_error {
+  color: #EE3465;
+}
+
 @media screen and (max-width: 900px) {
-  .movies__error {
+  .movies__notification {
     padding: 0 30px;
   }
 }
@@ -30,7 +34,7 @@
     min-height: calc(100vh - 327px);
   }
 
-  .movies__error {
+  .movies__notification {
     padding: 0 14px;
   }
 }

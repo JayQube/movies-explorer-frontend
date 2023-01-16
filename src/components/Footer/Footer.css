@@ -59,7 +59,7 @@
   transition: opacity .2s ease-in-out;
 }
 
-.footer__link:hover {
+.footer__social-link:hover {
   opacity: .7;
 }
 

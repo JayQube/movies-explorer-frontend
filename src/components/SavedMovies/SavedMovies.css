@@ -9,7 +9,7 @@
   min-height: calc(100vh - 245px);
 }
 
-.saved-movies__error {
+.saved-movies__notification {
   text-align: center;
   font-weight: 500;
   font-size: 28px;
@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .saved-movies__error {
+  .saved-movies__notification {
     padding: 0 30px;
   }
 }
@@ -30,7 +30,7 @@
     min-height: calc(100vh - 327px);
   }
 
-  .saved-movies__error {
+  .saved-movies__notification {
     padding: 0 14px;
   }
 }

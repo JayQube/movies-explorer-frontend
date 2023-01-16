@@ -8,7 +8,6 @@
 .search-form__form {
   display: flex;
   flex-direction: column;
-  gap: 29px;
 }
 
 .search-form__input-container {
@@ -39,8 +38,16 @@
 }
 
 .search-form__input::placeholder {
-  margin-left: 30px;
   color: #8B8B8B;
+}
+
+.search-form__error {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #EE3465;
+  height: 29px;
 }
 
 .search-form__confirm-btn {
@@ -91,10 +98,6 @@
     padding: 98px 14px 50px;
   }
 
-  .search-form__form {
-    gap: 42px;
-  }
-
   .search-form__input-container {
     padding: 0 80px 0 0;
     background-image: none;
@@ -106,6 +109,10 @@
     font-size: 18px;
     line-height: 22px;
     margin-top: 6px;
+  }
+
+  .search-form__error {
+    height: 42px;
   }
 
   .search-form__confirm-btn {

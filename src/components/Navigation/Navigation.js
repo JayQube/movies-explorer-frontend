@@ -1,7 +1,11 @@
-import './Navigation.css';
+import React from 'react';
+import { LoggedInContext } from "../../contexts/LoggedInContext";
 import { Link, NavLink } from 'react-router-dom';
+import './Navigation.css';
 
-function Navigation({ loggedIn, onBurgerClick, history }) {
+function Navigation({ onBurgerClick, history }) {
+  const loggedIn = React.useContext(LoggedInContext);
+
   return (
     <div className='navigation'>
       {loggedIn
